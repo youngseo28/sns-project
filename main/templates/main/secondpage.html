@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <!--추가한 내용-->
+      <div class="header2">
+        <br><br><br>
+          <h4>저는 멋쟁이 사자처럼 10기에서</h4>
+          <img src="{% static 'images/hand.png' %}" style="width: 300px;">
+          <h4><a class="likelion">기획/ 디자인 파트</a> 를 담당하고 있습니다!</h4>
+          <h4>기획/ 디자인의 매력은 무엇일까요?</h4>
+      </div>
+      <div class="basicinfo">
+        <br><br><br>
+        <h5 class="likelion under">1. 꾸미는 재미</h5><br>
+    
+        <div style="text-align: center;">
+            <img src="{% static 'images/equinox.jpg'%}" style="width: 600px;">
+        </div><br><br>
+        <h5 class="likelion under">2. 세상에 없던 아이디어</h5><br>
+      <div style="text-align: center;">
+        <video width="600px" controls>
+          <source src="{% static 'images/finevid.mp4' %}" type='video/mp4'>
+        </video>
+      </div><br><br>
+       <h5 class="likelion under">3. 사용자가 직접 접하는 화면 설계의 매력</h5><br>
+        <div style="text-align: center;">
+          <img src="{% static 'images/cs1.jpg' %}" style="width: 300px;"><img src="{% static 'images/cs2.jpg' %}" style="width: 300px;"><br>
+      </div><br><br>
+      <h5 class="likelion under">4. 불편 사항 개선으로 인한 사용성 향상</h5><br>
+        <div style="text-align: center;">
+          <img src="{% static 'images/flow.png' %}" style="width: 602px;"><br>
+      </div>
+        
+      </div>
+      
+
+{% endblock %}

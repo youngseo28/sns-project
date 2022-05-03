@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+      <div class="header2">
+        <br><br><br>
+          <h4>그동안의 <a class="likelion">대표작</a>입니다!</h4>
+          <img src="{% static 'images/plan.png' %}" style="width: 300px">
+          <h4>궁금하신 점은 contact 메뉴를 통해 연락주세요!</h4>
+      </div>
+      <div class="basicinfo">
+        <br><br><br>
+        <h5 class="likelion under">1. FINE: 불법주차 인식개선 및 예방 서비스</h5><br>
+    
+        <div style="text-align: center;">
+            <img src="{% static 'images/fine.jpg' %}" style="width: 600px">
+        </div><br><br>
+        
+       <h5 class="likelion under">2. 크스: 1인 크리에이터를 위하 셀프매니징 서비스</h5><br>
+        <div style="text-align: center;">
+          <img src="{% static 'images/cs.jpg' %}" style="width: 600px">
+      </div><br><br>
+      <h5 class="likelion under">3. 모해: 독거 노인을 위한 종합 복지 IoT</h5><br>
+        <div style="text-align: center;">
+          <img src="{% static 'images/mh.jpg' %}" style="width: 600px"><br>
+      </div>
+        
+      </div>
+      
+{% endblock %}

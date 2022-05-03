@@ -1,0 +1,98 @@
+*{
+    margin: auto;
+    padding: auto;
+    
+  
+  }
+  .header {
+      overflow: hidden;
+      background-color: #131313;
+      padding: 8px 80px;
+      font-family: 'Nanum Gothic';
+      border-radius: 6px;
+    }
+    
+    
+    .header a {
+      float: left;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 10px;
+      border-radius: 4px;
+  
+    }
+    
+    .header a:hover {
+      background-color: #ffa357;
+      color: black;
+    }
+    
+    
+    .header a.active {
+      background-color: #fa903a;
+      color: white;
+    }
+    
+    
+    .header-right {
+      float: center;
+    }
+  .container{
+      margin-right: 10%;
+      margin-left: 10%;
+      margin-top: 4%;
+      margin-bottom: 10%;
+  }
+  
+  .header2{
+      text-align: center;
+  }
+  
+  .content{
+      font-weight: 400px;
+      font-size: large;
+      text-align: center;
+  }
+  
+  .likelion{
+      color: hsl(36, 100%, 57%);
+      text-decoration: none;
+      font-weight: bold;
+  }
+  
+  ul{
+      font-size: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      display: table;
+      text-align: left;
+      float: center;
+  }
+  
+  ol{
+      font-size: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      display: table;
+      text-align: left;
+      float: center;
+  }
+  .insta{
+      color: #fa903a;
+  }
+  .under{
+      text-decoration: underline;
+  }
+  .check{
+      text-align: center;
+      float: center;
+  }
+  
+  h5{
+      text-align: center;
+  }
+  
+  
