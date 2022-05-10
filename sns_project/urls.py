@@ -33,4 +33,11 @@ urlpatterns = [
 
     #fourthpage URL 연결하기 with 별명사용
     path('fourthpage/', views.showfourth, name="showfourth"),
+
+    #path-converter 하나의 템플릿으로 여러 경우의 페이지를 띄울 수 있게 함
+    path('<int:id>',views.detail, name="detail"),
+
+    path('new/',views.new, name="new"),
+
+    path('create/', views.create, name="create"),
 ]

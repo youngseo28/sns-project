@@ -21,4 +21,19 @@
           
       </div>
 
+      <h2><a href="{%url 'new'%}">글쓰기</a></h2>
+
+      <h1>글 목록</h1>
+
+      <div>
+        {% for blog in blogs %}
+        <div>
+          <h3>{{blog.title}}</h3>
+          {{blog.writer}}<br>
+          {{blog.summary}}<br>
+          <a href="{% url 'detail' blog.id %}">...자세히</a>
+        </div>
+        {%endfor%}
+      </div>
+
 {% endblock %}
