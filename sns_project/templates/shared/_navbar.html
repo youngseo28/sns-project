@@ -2,10 +2,12 @@
 <div class="header">
       
   <div class="header-right">
-    <a href="{% url 'showmain' %}">&nbsp;&nbsp;&nbsp;&nbsp;자기소개&nbsp;&nbsp;&nbsp;&nbsp;</a>
-    <a href="{% url 'showfirst' %}">&nbsp;&nbsp;&nbsp;&nbsp;기본정보&nbsp;&nbsp;&nbsp;&nbsp;</a>
-    <a href="{% url 'showsecond' %}">&nbsp;&nbsp;&nbsp;&nbsp;기획/ 디자인&nbsp;&nbsp;&nbsp;&nbsp;</a>
-    <a href="{% url 'showthird' %}">&nbsp;&nbsp;&nbsp;&nbsp;작업물&nbsp;&nbsp;&nbsp;&nbsp;</a>
-    <a href="{% url 'showfourth' %}">&nbsp;&nbsp;&nbsp;&nbsp;연락처&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a href="{% url 'main:showmain' %}">&nbsp;&nbsp;&nbsp;&nbsp;자기소개&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a href="{% url 'main:showfirst' %}">&nbsp;&nbsp;&nbsp;&nbsp;기본정보&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a href="{% url 'main:showsecond' %}">&nbsp;&nbsp;&nbsp;&nbsp;기획/ 디자인&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a href="{% url 'main:showthird' %}">&nbsp;&nbsp;&nbsp;&nbsp;작업물&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a href="{% url 'main:showfourth' %}">&nbsp;&nbsp;&nbsp;&nbsp;연락처&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a href="{% url 'main:posts' %}">&nbsp;&nbsp;&nbsp;&nbsp;게시글 목록&nbsp;&nbsp;&nbsp;&nbsp;</a>
+    <a href="{% url 'main:new' %}">&nbsp;&nbsp;&nbsp;&nbsp;게시글 작성&nbsp;&nbsp;&nbsp;&nbsp;</a>
   </div>
 </div>

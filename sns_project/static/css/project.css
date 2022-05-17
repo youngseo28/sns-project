@@ -4,26 +4,26 @@
     
   
   }
-  .header {
+.header {
       overflow: hidden;
       background-color: #131313;
       padding: 8px 80px;
       font-family: 'Nanum Gothic';
       border-radius: 6px;
-    }
+}
     
     
-    .header a {
-      float: left;
-      color: #ffffff;
-      text-align: center;
-      padding: 10px;
-      text-decoration: none;
-      font-size: 18px;
-      line-height: 10px;
-      border-radius: 4px;
-  
-    }
+.header a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 10px;
+  border-radius: 4px;
+
+}
     
     .header a:hover {
       background-color: #ffa357;

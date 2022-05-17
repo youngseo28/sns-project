@@ -14,11 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 from main import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('main.urls')),
     #mainpage URL 연결하기 with 별명사용
     path('',views.showmain, name="showmain"),
 
@@ -40,4 +43,7 @@ urlpatterns = [
     path('new/',views.new, name="new"),
 
     path('create/', views.create, name="create"),
-]
+
+    path('posts/', views.posts, name="posts"),
+
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
