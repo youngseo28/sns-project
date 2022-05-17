@@ -50,7 +50,8 @@ def update(request, id):
     update_blog.writer = request.POST['writer']
     update_blog.pub_date = timezone.now()
     update_blog.body = request.POST['body']
-    update_blog.image = request.FILES.get('image')
+    if request.FILES.get("image"):
+        update_blog.image = request.FILES.get('image')
     update_blog.save()
     return redirect('main:detail',update_blog.id)
 
